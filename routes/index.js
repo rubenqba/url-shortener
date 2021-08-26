@@ -6,6 +6,12 @@ const config = require('config');
 
 const Url = require('../model/url');
 
+// @route GET /health
+// @desc returns ok
+router.get('/health', async (req, res) => {
+    return res.json('I\'m alive');
+});
+
 // @route GET /:code
 // @desc redirect to real url
 router.get('/:code', async (req, res) => {
