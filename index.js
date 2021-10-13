@@ -1,4 +1,5 @@
 const express = require('express');
+var cors = require('cors')
 const dotenv = require('dotenv').config();
 
 console.log(dotenv.parsed);
@@ -11,6 +12,7 @@ const app = express();
 connectDB();
 
 app.use(express.json({ extended: false }))
+app.use(cors())
 
 // define route
 app.use("/", require('./routes/index'));
