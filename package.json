@@ -1,13 +1,13 @@
 {
   "name": "url-shortener",
   "version": "1.0.0",
-  "description": "Gyfted URL Shortener service",
+  "description": "URL Shortener service",
   "main": "index.js",
   "scripts": {
     "start": "node index",
     "dev": "nodemon index"
   },
-  "author": "Ruben Bresler <ruben.bresler@gyfted.shop",
+  "author": "Ruben Bresler <ruben1981@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "config": "^3.3.6",
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "eslint": "^7.32.0",
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "prettier": "^2.8.8"
   }
 }
